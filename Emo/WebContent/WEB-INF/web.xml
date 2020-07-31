@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<servlet>
+		<servlet-name>homes</servlet-name>
+		<servlet-class>cd.emo.servlets.homes</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>messages</servlet-name>
+		<servlet-class>cd.emo.servlets.messages</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Contact</servlet-name>
+		<servlet-class>cd.emo.servlets.Contact</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Livredore</servlet-name>
+		<servlet-class>cd.emo.servlets.Livredore</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>homes</servlet-name>
+		<url-pattern>/home</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>messages</servlet-name>
+		<url-pattern>/message</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Contact</servlet-name>
+		<url-pattern>/contact</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Livredore</servlet-name>
+		<url-pattern>/livredore</url-pattern>
+	</servlet-mapping>
+</web-app>
