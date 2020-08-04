@@ -1,12 +1,12 @@
 package cd.emo.bdd;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import cd.emo.beans.Message;
@@ -27,25 +27,23 @@ public class MessageBDD {
         ResultSet resultat = null;
 
         try {
-            connexion = DriverManager.getConnection( "jdbc:mysql://localhost:3306/bddEmo", "root", "" );
+            connexion = DriverManager.getConnection( "jdbc:mysql://localhost:3306/Emodb", "root", "" );
 
             statement = connexion.createStatement();
 
             // execution de la requette
-            resultat = statement.executeQuery( "select * from messa;" );
+            resultat = statement.executeQuery( "SELECT nom, message, date FROM contenu;" );
 
             // recuperation des resultat
             while ( resultat.next() ) {
-                int id = resultat.getInt( "id" );
-                String nom = resultat.getString( "noms" );
-                String telephone = resultat.getString( "telephone" );
-                String message = resultat.getString( "message" );
-                Date date = resultat.getTimestamp( "date" );
+
+                String nom = resultat.getString( 1 );
+                String message = resultat.getString( 2 );
+                Date date = resultat.getDate( 3 );
 
                 Message message1 = new Message();
-                message1.setId( id );
+
                 message1.setNoms( nom );
-                message1.setTelephone( telephone );
                 message1.setMessages( message );
                 message1.setDate( date );
 

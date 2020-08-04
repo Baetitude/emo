@@ -21,22 +21,20 @@
 	  <c:import url="/inc/menu.jsp"/>
 	
 	  <main role="main" class="inner cover">
-	  	<p>${ form.resultat }</p>
-	  	<p>${ message.noms }</p>
-	  	<p>${ message.telephone }</p>
-	  	<p>${ message.messages }</p>
 	  	
-	  	<ul>
-	  		<c:forEach var="message" items="${ message }">
-	  			<li> 
-	  				<c:out value="${ message.id }"/>
-	  				<c:out value="${ message.noms }"/>
-	  				<c:out value="${ message.telephone }"/>
-	  				<c:out value="${ message.message }"/>
-	  				<c:out value="${ message.date }"/> 
-	  			</li>
-	  		</c:forEach>
-	  	</ul>
+				<c:forEach var="message" items="${ messag }">
+					<div class="card"> 
+						<div class="card-header text-primary">
+						<h6><c:out value="${ message.date }"/>    
+					    	<c:out value="${ message.noms }"/>
+					    </h6>
+						</div>
+						<div class="card-body text-dark">
+							<c:out value="${ message.messages }"/>
+						</div>
+					</div> <br>
+				</c:forEach>	
+
 	  </main>
 		<c:import url="/inc/footer.jsp"/> 
 	</div>

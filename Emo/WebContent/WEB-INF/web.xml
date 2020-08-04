@@ -9,8 +9,8 @@
 		<servlet-class>cd.emo.servlets.messages</servlet-class>
 	</servlet>
 	<servlet>
-		<servlet-name>Contact</servlet-name>
-		<servlet-class>cd.emo.servlets.Contact</servlet-class>
+		<servlet-name>Apropos</servlet-name>
+		<servlet-class>cd.emo.servlets.Apropos</servlet-class>
 	</servlet>
 	<servlet>
 		<servlet-name>Livredore</servlet-name>
@@ -26,8 +26,8 @@
 		<url-pattern>/message</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
-		<servlet-name>Contact</servlet-name>
-		<url-pattern>/contact</url-pattern>
+		<servlet-name>Apropos</servlet-name>
+		<url-pattern>/apropos</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>Livredore</servlet-name>

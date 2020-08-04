@@ -21,7 +21,12 @@
 	  <c:import url="/inc/menu.jsp"/>
 	
 	  <main role="main" class="inner cover">
-		
+		<p class="text-light"> 
+			En relations la communaute estidiantine, nous une equippes des devellopeurs d'une promotions de cette
+			académique 2019-2020, dans le soucie de permetre à tous le mondes etudiantes, membres de la fammille, collegue
+			resortisant de pouvoire laisser un message en du pdg qui vient de nous quitter malgre que nous voulions encore de luis
+			et cela tous à respecter les geste barrieres car il vous suffit de soumetre message via cette plate-forme.
+		</p>
 	  </main>
 		<c:import url="/inc/footer.jsp"/> 
 	</div>

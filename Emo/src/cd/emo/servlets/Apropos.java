@@ -9,16 +9,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class Contact
+ * Servlet implementation class Apropos
  */
-@WebServlet( "/Contact" )
-public class Contact extends HttpServlet {
+@WebServlet( "/Apropos" )
+public class Apropos extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Contact() {
+    public Apropos() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -29,7 +29,16 @@ public class Contact extends HttpServlet {
      */
     protected void doGet( HttpServletRequest request, HttpServletResponse response )
             throws ServletException, IOException {
-        this.getServletContext().getRequestDispatcher( "/WEB-INF/contact.jsp" ).forward( request, response );
+        this.getServletContext().getRequestDispatcher( "/WEB-INF/apropos.jsp" ).forward( request, response );
+    }
+
+    /**
+     * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+     *      response)
+     */
+    protected void doPost( HttpServletRequest request, HttpServletResponse response )
+            throws ServletException, IOException {
+
     }
 
 }

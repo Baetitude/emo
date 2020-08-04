@@ -8,7 +8,7 @@
 	      	<a class="nav-link" href="<c:url value="/homes"/>">Home</a>
 	      	<a class="nav-link" href="<c:url value="/livredore"/>">Livre d'ore</a>
 	        <a class="nav-link" href="<c:url value="/message"/>">Message</a>
-	        <a class="nav-link" href="<c:url value="/contact"/>">A propos</a>
+	        <a class="nav-link" href="<c:url value="/apropos"/>">A propos</a>
 	      </nav>
 	    </div>
 </header>

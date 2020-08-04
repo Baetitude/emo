@@ -3,6 +3,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
  <footer class="mastfoot mt-auto">
 	    <div class="inner">
-	      <p>Copy right 2020. L1gl</p>
+	      <p>EMO à jamais dans nos Coeur</p>
 	    </div>
 </footer>

@@ -31,9 +31,17 @@ public class Livredore extends HttpServlet {
      */
     protected void doGet( HttpServletRequest request, HttpServletResponse response )
             throws ServletException, IOException {
-        MessageBDD msbdd = new MessageBDD();
-        request.setAttribute( "message", msbdd.recupererMessage() );
+        MessageBDD mez = new MessageBDD();
+        request.setAttribute( "messag", mez.recupererMessage() );
+
         this.getServletContext().getRequestDispatcher( "/WEB-INF/livredore.jsp" ).forward( request, response );
+    }
+
+    @Override
+    protected void doPost( HttpServletRequest request, HttpServletResponse response )
+            throws ServletException, IOException {
+        this.getServletContext().getRequestDispatcher( "/WEB-INF/livredore.jsp" ).forward( request, response );
+
     }
 
 }

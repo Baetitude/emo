@@ -21,21 +21,27 @@
 	  <c:import url="/inc/menu.jsp"/>
 	
 	  <main role="main" class="inner cover">
-		<form method="post" action="<c:url value="/message"/>" >
-			  <div class="form-group">
-			    <input type="text" class="form-control" name="noms" id="exampleFormControlInput1" placeholder="prenom nom postnom">
-			  	<span class="text-danger">${ form.erreurs['noms'] }</span>
-			  </div>
-			  <div class="form-group">
-			    <input type="text" class="form-control" name="telephone" id="telephone" placeholder="telephone">
-			    <span class="text-danger">${ form.erreurs['telephone'] }</span>
+		<form method="post" action="<c:url value="/livredore"/>" >
+			 <div class="row">
+			 	<div class="col-md-6 col-sm-12 col-xs-12">
+				  <div class="form-group">
+				    <input type="text" class="form-control form-control-md" name="noms" id="exampleFormControlInput1" placeholder="Prenom Nom ">
+				  	<span class="text-danger">${ form.erreurs['noms'] }</span>
+				  </div>
+				  </div>
+				  <div class="col-md-6 col-sm-12 col-xs-12">
+				  <div class="form-group">
+				    <input type="text" class="form-control form-control-md" name="telephone" id="telephone" placeholder="telephone">
+				    <span class="text-danger">${ form.erreurs['telephone'] }</span>
+				  </div>
+				  </div>
 			  </div>
 			  <div class="form-group">
 			    <label class="text-danger" for="exampleFormControlTextarea1">Message</label>
 			    <textarea class="form-control" name="messages" id="exampleFormControlTextarea1" rows="3"></textarea>
 			    <span class="text-danger">${ form.erreurs['messages'] }</span>
 			  </div>
-			  <input type="submit" class="btn btn-success btn-lg" value="Envoyer" />
+			  <input type="submit" class="btn btn-secondary btn-lg" value="Envoyer" />
 		</form>
 		  </main>
 		<c:import url="/inc/footer.jsp"/> 
